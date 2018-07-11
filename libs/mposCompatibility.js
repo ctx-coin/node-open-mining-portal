@@ -79,13 +79,13 @@ module.exports = function(logger, poolConfig){
     };
 
     this.handleShare = function(isValidShare, isValidBlock, shareData){
-
+            //shareData.difficulty * (poolConfig.coin.mposDiffMultiplier || 1),
         var dbData = [
             shareData.ip,
             shareData.worker,
             isValidShare ? 'Y' : 'N',
             isValidBlock ? 'Y' : 'N',
-            shareData.difficulty * (poolConfig.coin.mposDiffMultiplier || 1),
+			shareData.shareDiff * (poolConfig.coin.mposDiffMultiplier || 1),
             typeof(shareData.error) === 'undefined' ? null : shareData.error,
             shareData.blockHash ? shareData.blockHash : (shareData.blockHashInvalid ? shareData.blockHashInvalid : '')
         ];
