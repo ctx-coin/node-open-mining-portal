@@ -1,8 +1,9 @@
 {
     "name": "Centauri Coin",
     "symbol": "CTX",
-    "algorithm": "scrypt"
-	"devmarketingScript": "8dbe79a6b89a0d43f3e6f23d7de3ae6e8a1e9c7d"
-	"acceptancepointsScript": "18942a9d29f520fb84125e28898efb3adf662a64"
-	"poscoachesScript": "12ed7fa6852661fe6a844d25a170df5cf1aeadaa"
+    "algorithm": "scrypt",
+    "acceptancepointsScript": "18942a9d29f520fb84125e28898efb3adf662a64",
+    "poscoachesScript": "12ed7fa6852661fe6a844d25a170df5cf1aeadaa",
+    "devmarketingScript": "8dbe79a6b89a0d43f3e6f23d7de3ae6e8a1e9c7d"
 }
+
